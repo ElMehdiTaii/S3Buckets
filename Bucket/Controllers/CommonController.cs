@@ -79,6 +79,7 @@ namespace Bucket.Controllers
                 {
                     BucketName = bucketCredsDto.BucketName,
                     Key = fileKey
+                    
                 };
 
                 using (GetObjectResponse response = await client.GetObjectAsync(listRequest))
